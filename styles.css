@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Ruslan+Display&display=swap");
+
 :root {
   --ink: #e9eadf;
   --muted: #9da394;
@@ -8,8 +10,9 @@
   --accent: #d9ff55;
   --accent-dark: #95b72e;
   --danger: #ff745b;
-  --serif: Georgia, "Times New Roman", serif;
-  --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --serif: "Cormorant Infant", Georgia, "Times New Roman", serif;
+  --sans: "Cormorant Infant", Georgia, "Times New Roman", serif;
+  --display: "Ruslan Display", "Cormorant Infant", Georgia, serif;
 }
 
 * { box-sizing: border-box; }
@@ -56,25 +59,46 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .brand-mark {
+  position: relative;
   width: 43px;
   height: 43px;
   display: grid;
   place-items: center;
-  border: 1px solid rgba(217, 255, 85, .48);
+  border: 0;
   border-radius: 50%;
   color: var(--accent);
-  font: 700 23px/1 var(--serif);
-  box-shadow: inset 0 0 0 4px var(--paper), inset 0 0 0 5px rgba(217, 255, 85, .18);
+  font: 400 21px/1 var(--display);
+  filter: drop-shadow(0 0 9px rgba(217, 255, 85, .12));
 }
+.brand-mark::before,
+.brand-mark::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgba(217, 255, 85, .56);
+  border-radius: 10px 50% 10px 50%;
+  transform: rotate(45deg);
+}
+.brand-mark::after {
+  inset: 8px;
+  border-color: rgba(217, 255, 85, .28);
+  border-radius: 50% 10px 50% 10px;
+  transform: rotate(22.5deg);
+  box-shadow:
+    0 0 0 3px var(--paper),
+    0 0 0 4px rgba(217, 255, 85, .18);
+}
+.brand-mark > span { position: relative; z-index: 1; }
 
 .brand strong, .brand small { display: block; }
-.brand strong { font: 700 22px/1 var(--serif); letter-spacing: .02em; }
-.brand small { color: var(--muted); font-size: 10px; letter-spacing: .13em; text-transform: uppercase; margin-top: 5px; }
+.brand strong { font: 400 20px/1 var(--display); letter-spacing: .02em; }
+.brand small { color: var(--muted); font: 600 10px/1 var(--serif); letter-spacing: .13em; text-transform: uppercase; margin-top: 6px; }
 
 nav { display: flex; align-items: center; gap: 28px; }
 nav a {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: 600;
   text-decoration: none;
   transition: color .2s ease;
 }
@@ -95,8 +119,7 @@ main, footer { max-width: 1240px; margin: 0 auto; }
 .eyebrow {
   margin: 0 0 22px;
   color: var(--muted);
-  font-size: 11px;
-  font-weight: 700;
+  font: 400 12px/1.2 var(--display);
   letter-spacing: .2em;
   text-transform: uppercase;
 }
@@ -124,7 +147,8 @@ h1 em { color: var(--accent); font-weight: 500; }
   max-width: 620px;
   margin: 30px 0 35px;
   color: #bdc1b4;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 500;
   line-height: 1.65;
 }
 
@@ -172,7 +196,7 @@ h1 em { color: var(--accent); font-weight: 500; }
 .radio-product {
   position: relative;
   z-index: 2;
-  width: min(570px, 118%);
+  width: min(610px, 126%);
   filter: drop-shadow(0 42px 34px rgba(0, 0, 0, .48));
   transform: translateY(8px) rotate(-1.3deg);
   animation: radio-float 6s ease-in-out infinite;
@@ -184,11 +208,11 @@ h1 em { color: var(--accent); font-weight: 500; }
 }
 .radio-screen-copy {
   position: absolute;
-  left: 38.2%;
-  top: 71.5%;
-  width: 29.2%;
-  height: 12.8%;
-  padding: 2.4% 2.7%;
+  left: 39.2%;
+  top: 62.2%;
+  width: 23.4%;
+  height: 12.5%;
+  padding: 2.2% 2.4%;
   overflow: hidden;
   color: rgba(20, 30, 16, .9);
   font-family: "Courier New", monospace;
@@ -251,7 +275,7 @@ h1 em { color: var(--accent); font-weight: 500; }
 
 .phrases-section { padding: 110px 50px 130px; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 50px; margin-bottom: 42px; }
-.section-heading h2, .install-section h2, .notice h2 { margin: 0; font-size: clamp(38px, 5vw, 64px); line-height: 1.05; font-weight: 500; letter-spacing: -.035em; }
+.section-heading h2, .install-section h2, .notice h2 { margin: 0; font-family: var(--display); font-size: clamp(34px, 4.6vw, 58px); line-height: 1.14; font-weight: 400; letter-spacing: -.015em; }
 .section-heading > p { max-width: 420px; margin: 0 0 4px; color: var(--muted); font-size: 14px; line-height: 1.65; }
 .toolbar { display: flex; justify-content: space-between; gap: 20px; align-items: center; margin-bottom: 22px; }
 .search {
@@ -311,8 +335,8 @@ h1 em { color: var(--accent); font-weight: 500; }
 }
 .track.playing .track-play { color: #111511; border-color: var(--accent); background: var(--accent); }
 .track-main { min-width: 0; }
-.track-main strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; font-weight: 620; }
-.track-main span, .track-file, .track-kind { color: var(--muted); font-size: 11px; }
+.track-main strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 16px; font-weight: 700; }
+.track-main span, .track-file, .track-kind { color: var(--muted); font-size: 12px; }
 .track-main span { display: block; margin-top: 5px; }
 .track-file { font-family: "SFMono-Regular", Consolas, monospace; }
 .track-kind { text-align: right; text-transform: uppercase; letter-spacing: .08em; }
@@ -336,8 +360,8 @@ code { color: var(--accent); font-family: "SFMono-Regular", Consolas, monospace;
 .steps li { min-height: 107px; padding: 17px 0; display: grid; grid-template-columns: 58px 1fr; gap: 17px; border-bottom: 1px solid var(--line); }
 .steps li:last-child { border: 0; }
 .steps li > span { color: var(--accent); font: italic 18px/1 var(--serif); }
-.steps strong { display: block; font: 500 21px/1.2 var(--serif); }
-.steps p { margin: 8px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
+.steps strong { display: block; font: 600 23px/1.2 var(--serif); }
+.steps p { margin: 8px 0 0; color: var(--muted); font-size: 15px; line-height: 1.5; }
 
 .notice { padding: 120px 15%; text-align: center; }
 .notice > p:first-child { color: var(--accent); font-size: 11px; text-transform: uppercase; letter-spacing: .18em; }
