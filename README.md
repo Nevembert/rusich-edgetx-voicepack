@@ -8,13 +8,13 @@
 
 **https://nevembert.github.io/rusich-edgetx-voicepack/**
 
-Готовый установочный архив: [Rusich_EdgeTX_Boxer_ready.zip](./Rusich_EdgeTX_Boxer_ready.zip)
+Готовый установочный архив: [Rusich_EdgeTX_Boxer_ready.zip](https://github.com/Nevembert/rusich-edgetx-voicepack/releases/latest/download/Rusich_EdgeTX_Boxer_ready.zip)
 
 ## Что внутри
 
 - `SOUNDS/ru/SYSTEM/` — 25 системных звуков EdgeTX;
 - `SOUNDS/ru/` — 52 назначаемых звука;
-- `Rusich_EdgeTX_Boxer_ready.zip` — готовый архив с правильной структурой папок;
+- раздел **Releases** — готовый архив с правильной структурой папок;
 - `index.html`, `styles.css`, `app.js` — страница предпрослушивания.
 
 Все WAV-файлы подготовлены без изменения высоты голоса:

@@ -1,0 +1,33 @@
+name: Build install archive
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "SOUNDS/**"
+      - "УСТАНОВКА.txt"
+      - "RELEASE_NOTES.md"
+      - ".github/workflows/release.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build EdgeTX archive
+        run: zip -9 -r Rusich_EdgeTX_Boxer_ready.zip SOUNDS УСТАНОВКА.txt
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release create v1.0.0
+          Rusich_EdgeTX_Boxer_ready.zip
+          --target "$GITHUB_SHA"
+          --title "Русич v1.0.0 — EdgeTX voice pack · elevenlabs.io"
+          --notes-file RELEASE_NOTES.md

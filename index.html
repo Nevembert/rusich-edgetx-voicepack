@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Бесплатная некоммерческая русская озвучка EdgeTX для RadioMaster Boxer с предпрослушиванием всех фраз. Создано с ElevenLabs.">
+  <meta name="theme-color" content="#111511">
+  <title>Русич — русская озвучка EdgeTX · создано с ElevenLabs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Русич — в начало">
+      <span class="brand-mark">Р</span>
+      <span>
+        <strong>Русич</strong>
+        <small>голос для EdgeTX</small>
+      </span>
+    </a>
+    <nav aria-label="Основная навигация">
+      <a href="#phrases">Послушать</a>
+      <a href="#install">Установка</a>
+      <a href="https://github.com/Nevembert/rusich-edgetx-voicepack">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> RadioMaster Boxer · EdgeTX</p>
+        <h1>К полёту всё готово, <em>су́дарь.</em></h1>
+        <p class="lead">Низкий русский голос для вашего пульта: системные предупреждения, режимы полёта и команды — 77 отдельных фраз.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://github.com/Nevembert/rusich-edgetx-voicepack/releases/latest/download/Rusich_EdgeTX_Boxer_ready.zip">
+            <span>Скачать готовый пакет</span>
+            <small>ZIP · для SD-карты</small>
+          </a>
+          <button class="button button-ghost" id="heroPlay" type="button">
+            <span class="play-symbol">▶</span>
+            <span>Послушать приветствие</span>
+          </button>
+        </div>
+        <p class="compatibility">WAV · PCM 16-bit · 32 kHz · Mono</p>
+      </div>
+
+      <div class="radio-card" aria-hidden="true">
+        <div class="radio-antenna"></div>
+        <div class="radio-body">
+          <div class="radio-top">
+            <i></i><i></i><i></i>
+          </div>
+          <div class="radio-screen">
+            <span>РУСИЧ</span>
+            <strong>ГОТОВ К ПОЛЁТУ</strong>
+            <div class="signal"><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="sticks">
+            <div class="stick"><i></i></div>
+            <div class="stick"><i></i></div>
+          </div>
+          <div class="radio-label">BOXER</div>
+        </div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Сведения о наборе">
+      <div><strong>77</strong><span>фраз</span></div>
+      <div><strong>25</strong><span>системных</span></div>
+      <div><strong>52</strong><span>назначаемых</span></div>
+      <div><strong>1</strong><span>готовый ZIP</span></div>
+    </section>
+
+    <section class="phrases-section" id="phrases">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> Предпрослушивание</p>
+          <h2>Выберите фразу</h2>
+        </div>
+        <p>Нажмите на строку, чтобы услышать именно тот WAV-файл, который будет воспроизводить пульт.</p>
+      </div>
+
+      <div class="toolbar">
+        <label class="search">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Поиск по названию или фразе…" autocomplete="off">
+        </label>
+        <div class="filters" role="group" aria-label="Фильтр фраз">
+          <button class="filter active" type="button" data-filter="all">Все <span>77</span></button>
+          <button class="filter" type="button" data-filter="system">Системные <span>25</span></button>
+          <button class="filter" type="button" data-filter="custom">Назначаемые <span>52</span></button>
+        </div>
+      </div>
+
+      <div class="track-list" id="trackList" aria-live="polite"></div>
+      <p class="empty-state" id="emptyState" hidden>По вашему запросу ничего не найдено.</p>
+    </section>
+
+    <section class="install-section" id="install">
+      <div class="install-intro">
+        <p class="eyebrow"><span></span> Быстрая установка</p>
+        <h2>Три шага — и голос в пульте</h2>
+        <p>Набор подготовлен для русской локали EdgeTX. Перед заменой сохраните копию своей папки <code>SOUNDS</code>.</p>
+        <a class="text-link" href="https://github.com/Nevembert/rusich-edgetx-voicepack/releases/latest/download/Rusich_EdgeTX_Boxer_ready.zip">Скачать ZIP <span>↗</span></a>
+      </div>
+      <ol class="steps">
+        <li>
+          <span>01</span>
+          <div><strong>Скачайте и распакуйте</strong><p>В архиве уже лежит правильная структура папок.</p></div>
+        </li>
+        <li>
+          <span>02</span>
+          <div><strong>Подключите SD-карту</strong><p>Выключите пульт и вставьте карту в компьютер.</p></div>
+        </li>
+        <li>
+          <span>03</span>
+          <div><strong>Скопируйте папку SOUNDS</strong><p>Объедините её с папкой на карте, разрешив замену файлов.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="notice">
+      <p>Для личного некоммерческого использования</p>
+      <h2>Голос создан для атмосферы, предупреждения — для безопасности.</h2>
+      <p>После установки обязательно проверьте критические уведомления на земле: газ, переключатели, RSSI, телеметрию и заряд батареи.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Русич</strong>
+      <p>Любительская русская озвучка EdgeTX.</p>
+    </div>
+    <p>Озвучено с помощью <a href="https://elevenlabs.io/">ElevenLabs</a>, голос Nester Surovy. Проект не связан с EdgeTX, RadioMaster или ElevenLabs.</p>
+  </footer>
+
+  <aside class="player" id="player" aria-label="Аудиоплеер">
+    <button class="player-play" id="playerPlay" type="button" aria-label="Воспроизвести">
+      <span>▶</span>
+    </button>
+    <div class="player-copy">
+      <span id="playerCode">hello.wav</span>
+      <strong id="playerTitle">К полёту всё готово, су́дарь. С Богом!</strong>
+    </div>
+    <div class="player-progress">
+      <input id="progress" type="range" min="0" max="1000" value="0" aria-label="Позиция воспроизведения">
+      <div><span id="currentTime">0:00</span><span id="duration">0:00</span></div>
+    </div>
+    <button class="player-close" id="playerClose" type="button" aria-label="Закрыть плеер">×</button>
+  </aside>
+
+  <audio id="audio" preload="metadata"></audio>
+  <script src="app.js"></script>
+</body>
+</html>
