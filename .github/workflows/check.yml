@@ -1,0 +1,22 @@
+name: Check voice pack
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install audio tools
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: python -m unittest discover -s tests -v
+      - run: python tools/voicepack.py validate
+      - run: python tools/voicepack.py build-site
+      - run: python tools/voicepack.py source-zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: arcwarden-source-and-site
+          path: dist/
