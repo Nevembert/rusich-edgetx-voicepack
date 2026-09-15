@@ -1,0 +1,22 @@
+{
+  "source_page": "https://radiomasterrc.com/products/pocket-radio-controller-m2",
+  "source_image": "https://radiomasterrc.com/cdn/shop/files/POCKET-1000x1000-Charcoal-1.jpg?v=1750061505",
+  "source_path": "/workspace/scratch/9771d6dbbe6a/artwork/radiomaster-pocket-original.jpg",
+  "source_size": [
+    1000,
+    1000
+  ],
+  "source_layout_reference": "https://cdn.shopify.com/s/files/1/0609/8324/7079/files/POCKET-Details-EN-PC_11_01_1024x1024.jpg?v=1690855690",
+  "generated_path": "/workspace/scratch/9771d6dbbe6a/artwork/radiomaster-pocket-arc-warden.png",
+  "generated_original_path": "/workspace/scratch/9771d6dbbe6a/generated_images/exec-b59390eb-e70d-4ed6-bb89-c47b2979c60f.png",
+  "generated_size": [
+    1254,
+    1254
+  ],
+  "generated_mode": "RGB",
+  "true_transparency": false,
+  "generation_calls": 1,
+  "method": "built-in image_gen image edit",
+  "caveat": "Image generation returned a baked checkerboard instead of alpha transparency. No retry or extraction performed.",
+  "qa": "Full uncut frontal silhouette, T antenna, two gimbals, top-center monochrome LCD, power/trim controls, lower centered speaker, left navigation stack, and right menu wheel preserved. Arc Warden treatment adds graphite/bronze shell graphics, cyan cracks/runes and violet accents without protruding armor."
+}

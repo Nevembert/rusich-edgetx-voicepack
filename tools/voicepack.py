@@ -240,8 +240,8 @@ def build_site(args):
 def source_zip(args):
     destination = ROOT / "dist" / "ArcWarden_Project_Source.zip"
     # Explicit allowlist: never include credentials, raw recordings, Git or hosting identity.
-    sources = [ROOT / name for name in ("README.md", "manifest.json", "PHRASES.md", "VOICE-BRIEF.md", "INSTALL.md", "AUDIO-NOTES.md", "LICENSE", ".gitignore")]
-    for folder in ("tools", "tests", ".github", "SOUNDS", "dist"):
+    sources = [ROOT / name for name in ("README.md", "manifest.json", "PHRASES.md", "VOICE-BRIEF.md", "INSTALL.md", "AUDIO-NOTES.md", "ARTWORK.md", "LICENSE", ".gitignore")]
+    for folder in ("tools", "tests", ".github", "SOUNDS", "dist", "design"):
         sources.extend(p for p in (ROOT / folder).rglob("*") if p.is_file() and "__pycache__" not in p.parts and p.suffix not in (".zip", ".pyc"))
     with zipfile.ZipFile(destination, "w", zipfile.ZIP_DEFLATED) as archive:
         for source in sorted(set(sources)):
