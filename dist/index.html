@@ -7,7 +7,7 @@
   <title>ЗЕТ: Раскол — Arc Warden × EdgeTX</title>
   <meta name="description" content="77 новых русских реплик для пульта в образе Арк Вардена. Сценарий, каталог и инструменты сборки. Голос ожидает записи.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23080b12'/%3E%3Cpath d='m15 3-9 13 9 13-3-13Z' fill='%235ae9ff'/%3E%3Cpath d='m18 3 8 13-8 13 3-13Z' fill='%23b290ff'/%3E%3C/svg%3E">
-  <link rel="preload" href="assets/arcwarden-reference.jpg" as="image">
+  <link rel="preload" href="assets/arcwarden-duality-hero.webp" as="image" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
   <script defer src="tracks.js"></script>
   <script defer src="app.js"></script>
@@ -19,26 +19,24 @@
     <nav aria-label="Навигация"><a href="#catalog">Реплики</a><a href="#install">Установка</a><a class="git-link" href="https://github.com/Nevembert/rusich-edgetx-voicepack/tree/arcwarden" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></nav>
   </header>
 
-  <main class="wrap">
+  <main>
     <section class="hero" aria-labelledby="heroTitle">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="tiny-diamond" aria-hidden="true"></span> DOTA 2 · ГОЛОСОВОЙ ПАКЕТ</p>
-        <h1 id="heroTitle">АРК<br><span>ВАРДЕН</span></h1>
-        <p class="hero-motto">Две сущности. Одна воля.</p>
-        <p class="intro">77 русских реплик для EdgeTX.<br>От первого включения до возвращения к истоку.</p>
-        <div class="hero-actions"><a class="button primary" href="#catalog">Открыть реплики <span aria-hidden="true">↓</span></a><a class="button subtle" href="PHRASES.md" download>Скачать сценарий</a></div>
-        <p class="hero-platform">RADIOMASTER POCKET <span>×</span> EDGETX <span>×</span> RU</p>
-      </div>
-      <div class="hero-stage">
-        <img class="character-art" src="assets/arcwarden-reference.jpg" alt="Арк Варден: призрачная голубая энергия и тёмная металлическая броня" width="1536" height="1300" fetchpriority="high">
-        <span class="stage-word" aria-hidden="true">TEMPEST<br>DOUBLE</span>
-        <figure class="pocket-figure">
-          <img class="pocket-art" src="assets/pocket-arcwarden.webp" alt="RadioMaster Pocket: художественное оформление корпуса под броню Арк Вардена с голубым и фиолетовым свечением" width="1254" height="1254" fetchpriority="high">
-          <figcaption><strong>POCKET <span>/ ОБЛИК ЗЕТА</span></strong><span>Художественный концепт оформления</span></figcaption>
-        </figure>
+      <img class="hero-background" src="assets/arcwarden-duality-hero.webp" alt="Арк Варден крупным планом: голубая и тёмная фиолетовая половины вместе держат один RadioMaster Pocket по центру" width="1672" height="941" fetchpriority="high" decoding="async">
+      <div class="hero-content wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="tiny-diamond" aria-hidden="true"></span> DOTA 2 · ГОЛОСОВОЙ ПАКЕТ</p>
+          <h1 id="heroTitle">АРК <span>ВАРДЕН</span></h1>
+          <p class="hero-motto">Две сущности.<br> Одна воля.</p>
+        </div>
+        <div class="hero-details">
+          <p class="intro">77 русских реплик для EdgeTX.<br>От первого включения до возвращения к истоку.</p>
+          <div class="hero-actions"><a class="button primary" href="#catalog">Открыть реплики <span aria-hidden="true">↓</span></a><a class="button subtle" href="PHRASES.md" download>Скачать сценарий</a></div>
+          <p class="hero-platform">RADIOMASTER POCKET <span>×</span> EDGETX <span>×</span> RU</p>
+        </div>
       </div>
     </section>
 
+    <div class="wrap page-content">
     <section class="status-strip" aria-label="Готовность пакета">
       <div><span class="status-label">ПРОБУЖДЕНИЕ ГОЛОСА</span><strong id="packStatus">Сценарий готов · голос ещё не записан</strong></div>
       <div class="record-count"><strong id="readyCount">0 / 77</strong><span>записей</span></div>
@@ -76,9 +74,10 @@
       <div><p class="eyebrow">СЦЕНАРИЙ · ИСХОДНИКИ · СБОРКА</p><h2>Всё начинается с воли.</h2><p id="downloadNote">Забирай проект и тексты. Установочный архив появится после записи всех 77 фраз.</p></div>
       <div class="download-actions"><a class="button primary" href="ArcWarden_Project_Source.zip" download>Скачать проект <span aria-hidden="true">↓</span></a><a id="releaseLink" class="button subtle" hidden download>Скачать озвучку для пульта</a><span id="releasePending" class="pending-label">Озвучка ожидает записи</span></div>
     </section>
+    </div>
   </main>
 
-  <footer class="wrap footer"><span>ЗЕТ: РАСКОЛ <small>BY NEVEMBERT</small></span><p>Фан-проект по мотивам Dota 2. Персонаж принадлежит Valve. Pocket на иллюстрации — концепт оформления.</p><div class="footer-links"><a href="https://github.com/Nevembert/rusich-edgetx-voicepack" target="_blank" rel="noopener">Предыдущий пакет — «Русич» ↗</a><a href="https://radiomasterrc.com/products/pocket-radio-controller-m2" target="_blank" rel="noopener">Исходная модель — RadioMaster Pocket ↗</a></div></footer>
+  <footer class="wrap footer"><span>ЗЕТ: РАСКОЛ <small>BY NEVEMBERT</small></span><p>Фан-проект по мотивам Dota 2. Персонаж принадлежит Valve. Фон — художественная иллюстрация с RadioMaster Pocket.</p><div class="footer-links"><a href="https://github.com/Nevembert/rusich-edgetx-voicepack" target="_blank" rel="noopener">Предыдущий пакет — «Русич» ↗</a><a href="https://radiomasterrc.com/products/pocket-radio-controller-m2" target="_blank" rel="noopener">Исходная модель — RadioMaster Pocket ↗</a></div></footer>
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
   <section id="player" class="player" aria-label="Проигрыватель" hidden><div><strong id="playerTitle"></strong><span id="playerFile"></span></div><audio id="audio" controls preload="none"></audio><button type="button" id="closePlayer" aria-label="Закрыть проигрыватель">×</button></section>
 </body>

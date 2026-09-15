@@ -1,0 +1,14 @@
+{
+  "asset": "dist/assets/arcwarden-duality-hero.webp",
+  "approved_image": "exec-fc2995c4-beac-4350-831a-086ad364d9bd.png",
+  "source_sha256": "c5db3222ebb7a9258523fe7b0dd3d7db16f28fc13a40683545386bf7bcebe604",
+  "asset_sha256": "e241e6c0b8c8228dc834480f2b24553bf0df4a952f250f4fd22d34376c49c776",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "generation": "Built-in imagegen; user-approved close-up revision with one central RadioMaster Pocket",
+  "conversion": "WebP quality 95; no resizing, compositing or regeneration",
+  "product_reference": "https://radiomasterrc.com/cdn/shop/files/POCKET-1000x1000-Charcoal-1.jpg?v=1750061505",
+  "character_references": "User-supplied Dota 2 Arc Warden images; character belongs to Valve"
+}
