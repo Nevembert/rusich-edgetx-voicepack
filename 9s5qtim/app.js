@@ -95,7 +95,7 @@ let currentTrack = null;
 let filter = "all";
 
 function audioPath(track) {
-  return `../../SOUNDS/ru/${track.file}`;
+  return `SOUNDS/ru/${track.file}`;
 }
 
 function formatTime(seconds) {
