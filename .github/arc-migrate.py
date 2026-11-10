@@ -19,10 +19,13 @@ def download(item):
     destination = root.joinpath(*path.parts)
     destination.parent.mkdir(parents=True, exist_ok=True)
     url = base + quote(path.as_posix(), safe='/')
-    content = subprocess.check_output([
-        'curl', '--fail', '--silent', '--show-error', '--location',
-        '--user-agent', 'Mozilla/5.0', '--retry', '2', '--max-time', '40', url,
-    ])
+    if path == PurePosixPath('index.html'):
+        content = Path('.github/arc-migration-index.html').read_bytes()
+    else:
+        content = subprocess.check_output([
+            'curl', '--fail', '--silent', '--show-error', '--location',
+            '--user-agent', 'Mozilla/5.0', '--retry', '2', '--max-time', '40', url,
+        ])
     digest = sha256(content).hexdigest()
     if item.get('sha256') and digest != item['sha256']:
         raise ValueError(f'SHA-256 mismatch: {path} {digest}')

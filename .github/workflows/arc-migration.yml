@@ -13,7 +13,7 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - name: Download and verify original page and archives
+      - name: Assemble and verify the original page and archives
         run: python .github/arc-migrate.py
       - name: Commit transferred page
         run: |

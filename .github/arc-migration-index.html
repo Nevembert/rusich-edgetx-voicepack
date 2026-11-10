@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <title>ЗЕТ: Раскол — Arc Warden × EdgeTX</title>
+  <meta name="description" content="Полная и короткая озвучка Арк Вардена: по 77 русских реплик для RadioMaster Pocket и EdgeTX. Прослушивание, тексты и отдельные архивы для пульта.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23080b12'/%3E%3Cpath d='m15 3-9 13 9 13-3-13Z' fill='%235ae9ff'/%3E%3Cpath d='m18 3 8 13-8 13 3-13Z' fill='%23b290ff'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/arcwarden-duality-hero.webp" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="tracks.js"></script>
+  <script defer src="tracks-short.js?v=1.0.1-short"></script>
+  <script defer src="app.js?v=1.0.1-short"></script>
+</head>
+<body>
+  <a class="skip" href="#catalog">Перейти к фразам</a>
+  <header class="topbar wrap">
+    <a class="brand" href="#" aria-label="ЗЕТ: Раскол — начало"><span class="mark" aria-hidden="true">◈</span><span>ЗЕТ<span class="brand-sub">РАСКОЛ</span></span></a>
+    <nav aria-label="Навигация"><a href="#catalog">Полная</a><a href="#short">Короткая</a><a href="#install">Установка</a><a class="git-link" href="https://github.com/Nevembert/rusich-edgetx-voicepack/tree/arcwarden" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <img class="hero-background" src="assets/arcwarden-duality-hero.webp" alt="Арк Варден крупным планом: голубая и тёмная фиолетовая половины вместе держат один RadioMaster Pocket по центру" width="1672" height="941" fetchpriority="high" decoding="async">
+      <div class="hero-content wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="tiny-diamond" aria-hidden="true"></span> DOTA 2 · ГОЛОСОВОЙ ПАКЕТ</p>
+          <h1 id="heroTitle">АРК <span>ВАРДЕН</span></h1>
+          <p class="hero-motto">Две сущности.<br> Одна воля.</p>
+        </div>
+        <div class="hero-details">
+          <p class="intro">77 русских реплик для EdgeTX.<br>Полная версия с характером. Короткая — только суть.</p>
+          <div class="hero-actions"><a class="button primary" href="#short">Короткая озвучка <span aria-hidden="true">↓</span></a><a class="button subtle" href="#catalog">Полная озвучка</a></div>
+          <p class="hero-platform">RADIOMASTER POCKET <span>×</span> EDGETX <span>×</span> RU</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap page-content">
+    <section class="status-strip" aria-label="Готовность пакета">
+      <div><span class="status-label">САМОСТЬ ПРОБУДИЛАСЬ</span><strong id="packStatus">Все записи готовы к установке</strong></div>
+      <div class="record-count"><strong id="readyCount">77 / 77</strong><span>записей</span></div>
+      <span class="format">WAV · 32 kHz · mono</span>
+    </section>
+
+    <section id="catalog" class="catalog" aria-labelledby="catalogTitle">
+      <div class="section-heading"><div><p class="eyebrow">01 / РЕПЛИКИ ЗЕТА</p><h2 id="catalogTitle">Его воля. Твой полёт.</h2></div><a id="phrasesLink" class="text-link" href="PHRASES.md" download>Все тексты ↗</a></div>
+      <div id="short" class="edition-switch" role="group" aria-label="Версия озвучки">
+        <button type="button" class="edition-choice active" data-edition="full" aria-pressed="true"><span>Полная озвучка</span><small>С комментариями и характером Самости</small></button>
+        <button type="button" class="edition-choice" data-edition="short" aria-pressed="false"><span>Короткая озвучка</span><small>Только команды и названия режимов</small></button>
+      </div>
+      <p class="catalog-note" id="catalogNote">Слушай записи, скачивай отдельные WAV и копируй фразы по одной или группой.</p>
+      <div class="edition-download"><a id="catalogReleaseLink" class="button primary" href="ArcWarden_EdgeTX_ru.zip" download>Скачать полную озвучку ↓</a><span id="editionSummary"></span></div>
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Категория фраз">
+          <button type="button" class="filter active" data-filter="all" aria-pressed="true">Все <span>77</span></button>
+          <button type="button" class="filter" data-filter="system" aria-pressed="false">Система <span>25</span></button>
+          <button type="button" class="filter" data-filter="custom" aria-pressed="false">Назначаемые <span>52</span></button>
+          <button type="button" class="filter" data-filter="alerts" aria-pressed="false">Предупреждения</button>
+        </div>
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Найти фразу или событие" aria-label="Поиск по тексту, событию или имени файла" autocomplete="off"></label>
+      </div>
+      <div class="list-heading"><span id="resultCount" aria-live="polite">77 фраз</span><span>ГОЛОС САМОСТИ</span></div>
+      <div id="trackList" class="track-list"></div>
+      <p id="empty" class="empty" hidden>Таких фраз пока нет. Попробуй другое слово или категорию.</p>
+      <noscript><p>Для поиска и прослушивания нужен JavaScript. <a href="PHRASES.md">Открыть весь сценарий</a>.</p></noscript>
+    </section>
+
+    <section id="install" class="install" aria-labelledby="installTitle">
+      <div class="install-title"><p class="eyebrow">02 / ВОПЛОЩЕНИЕ</p><h2 id="installTitle">Пробуди<br>свой Pocket.</h2><p>25 системных уведомлений. 52 назначаемые реплики. Русский пакет для EdgeTX.</p><a class="text-link" href="INSTALL.md" download>Инструкция по установке ↗</a></div>
+      <div class="steps">
+        <article><span>01</span><div><h3>Выбрать версию</h3><p>Полная — с комментариями. Короткая — только основные фразы. В каждом архиве 77 записей с одинаковыми именами: устанавливай одну версию. Сначала сохрани копию SOUNDS со своей SD-карты.</p></div></article>
+        <article><span>02</span><div><h3>Скопировать на пульт</h3><p>Объедини папку SOUNDS из архива с папкой на SD-карте. Замени совпадающие файлы, сохрани остальные звуки русского пакета.</p></div></article>
+        <article><span>03</span><div><h3>Назначить и проверить</h3><p>Выбери русский язык. Назначь дорожки в специальных функциях модели и проверь уведомления на земле.</p></div></article>
+      </div>
+    </section>
+
+    <section class="downloads" aria-label="Скачивание проекта">
+      <div><p class="eyebrow">ОЗВУЧКА · ТЕКСТЫ · ИСХОДНИКИ</p><h2>Самость готова к полёту.</h2><p id="downloadNote">Готовый пакет для SD-карты и исходники проекта. Перед первым полётом проверь уведомления на своём пульте.</p></div>
+      <div class="download-actions"><a id="releaseLink" class="button primary" href="ArcWarden_EdgeTX_ru.zip" download>Скачать полную озвучку ↓</a><a id="otherReleaseLink" class="button subtle" href="ArcWarden_EdgeTX_ru_short.zip" download>Скачать короткую озвучку ↓</a><a class="button subtle" href="ArcWarden_Project_Source.zip" download>Исходники сайта и тексты</a><span id="releasePending" class="pending-label" hidden>Озвучка ожидает записи</span></div>
+    </section>
+    </div>
+  </main>
+
+  <footer class="wrap footer"><span>ЗЕТ: РАСКОЛ <small>BY NEVEMBERT</small></span><p>Синтетическая фанатская озвучка по мотивам Dota 2. Персонаж принадлежит Valve. Записи подготовлены в Fish Audio.</p><div class="footer-links"><a href="https://github.com/Nevembert/rusich-edgetx-voicepack" target="_blank" rel="noopener">Предыдущий пакет — «Русич» ↗</a><a href="AUDIO-NOTES.md">Об озвучке ↗</a></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <section id="player" class="player" aria-label="Проигрыватель" hidden><div><strong id="playerTitle"></strong><span id="playerFile"></span></div><audio id="audio" controls preload="none"></audio><button type="button" id="closePlayer" aria-label="Закрыть проигрыватель">×</button></section>
+</body>
+</html>
