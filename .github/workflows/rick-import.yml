@@ -1,0 +1,40 @@
+name: Import verified Rick Drone Pilot full edition
+on:
+  push:
+    branches: [rick-drone-full-import]
+    paths: ['.github/workflows/rick-import.yml']
+permissions:
+  contents: write
+  actions: write
+jobs:
+  import-full:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reassemble and verify the full-edition payload
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/rick-drone-full"
+          for part in .rick-drone-full-import/parts/*.b64; do
+            base64 --decode "$part"
+          done > "$RUNNER_TEMP/rick-drone-full.tar.gz"
+          printf '%s  %s\n' 'a655ab26362aeacc3e801d94997887e3e91c3b96107efed84826286e778b2e60' "$RUNNER_TEMP/rick-drone-full.tar.gz" | sha256sum --check
+          tar -xzf "$RUNNER_TEMP/rick-drone-full.tar.gz" -C "$RUNNER_TEMP/rick-drone-full"
+          python "$RUNNER_TEMP/rick-drone-full/build_audio.py" "$RUNNER_TEMP/rick-drone-full/mapped" "$RUNNER_TEMP/rick-drone-full/site"
+      - name: Commit the published page and its 77 EdgeTX WAV files
+        run: |
+          set -euo pipefail
+          git fetch origin refs/heads/main
+          git checkout --detach FETCH_HEAD
+          test ! -e rkb0h77
+          cp -a "$RUNNER_TEMP/rick-drone-full/site" rkb0h77
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- rkb0h77
+          git commit -m 'Publish Rick Drone Pilot full EdgeTX voice pack'
+          git push origin HEAD:refs/heads/main
+      - name: Publish the current main branch on GitHub Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main

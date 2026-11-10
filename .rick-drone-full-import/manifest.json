@@ -1,0 +1,504 @@
+[
+  {
+    "path": "build_audio.py",
+    "bytes": 2034,
+    "sha256": "12c59796a0b7385cf9d5907881710a4a38ebecd20c5119d102e68c2441992978"
+  },
+  {
+    "path": "mapped/SYSTEM/eebad.mp3",
+    "bytes": 29325,
+    "sha256": "80ae6506d1ebbb6cb2ac6b1a86691d274782bfdde70dbd06f440bfdae4bdef0c",
+    "original_recording": "Рик-2026-11-10-07-03-Ошибка-памяти-пульта.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/hello.mp3",
+    "bytes": 88675,
+    "sha256": "fb2e140315321e82c547e0031e760f90e841635227f970a140f42dbe9c5e7014",
+    "original_recording": "Рик-2026-11-10-06-49-[fast-in-one-breath]-Вабба-лабба-дааб-даааб!-[br.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/inactiv.mp3",
+    "bytes": 68613,
+    "sha256": "10ba45f50f84c8f1b07f060d736ae48d6aa3887b975b2820978f92c9dbb93bad",
+    "original_recording": "Рик-2026-11-10-06-51-Пульт-без-дела.-[break]-[bored]-Морти,-ты-в-друг.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/lowbatt.mp3",
+    "bytes": 30997,
+    "sha256": "b2ced47e9702b75926e076e05d35880d9765dd48af22d874f1960af8f8f72bf4",
+    "original_recording": "Рик-2026-11-10-07-03-Низкий-заряд-пульта,-Морти.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/maxtrim.mp3",
+    "bytes": 55238,
+    "sha256": "3dd484614ec53cff6efd40747131901e27c625ff86d70e5c151facce5c64c76f",
+    "original_recording": "Рик-2026-11-10-07-13-Триммер-на-максимуме.-Упрямее-только-Джерри.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/midtrim.mp3",
+    "bytes": 62761,
+    "sha256": "16cda83a3ac1ae2cffef3d19233e7b2680c01ddb3eb2ae773da9e272d72e90ce",
+    "original_recording": "Рик-2026-11-10-06-58-Триммер-в-центре.-[satisfied]-О,-симметрия.-Нако.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/mintrim.mp3",
+    "bytes": 64851,
+    "sha256": "765061e98517f69c369927beeb7005aca00f86b4b8aac027c6577651703c6ab2",
+    "original_recording": "Рик-2026-11-10-07-14-Триммер-на-минимуме.-[break]-[deadpan]-Всё,-дно.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/modelpwr.mp3",
+    "bytes": 44371,
+    "sha256": "5dc32c6b3d1bcfa59f686b666db2a79813bc372815f4adf62008f0a3e2b1e7a4",
+    "original_recording": "Рик-2026-11-10-07-04-Модель-ещё-включена,-Морти.-Выключи-её.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/rssi_org.mp3",
+    "bytes": 47715,
+    "sha256": "34f5db8de6d8daa5af927572b18a556b2baaf39cb91a0b06aa6ee35b83cecc9f",
+    "original_recording": "Рик-2026-11-10-07-04-Слабый-сигнал,-Морти.-Следи-за-связью.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/rssi_red.mp3",
+    "bytes": 38102,
+    "sha256": "0315b919510fe98d18e0ab66f34abbb988fee9de922b6b231fed51e1f8ae9745",
+    "original_recording": "Рик-2026-11-10-07-05-[firm,-clear,-urgent]-Критически-слабый-сигнал,.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/rxko.mp3",
+    "bytes": 33922,
+    "sha256": "b4fb08f5ac5ab6a9177affc521980ea4615a61a7472ebce493a0cd672198448e",
+    "original_recording": "Рик-2026-11-10-07-07-Перегрузка-приёмника,-Морти!.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/sensorko.mp3",
+    "bytes": 30997,
+    "sha256": "cc3455f2d7bf480c5404a6028b324067e940e78adc347fa75d38af4d54d8389c",
+    "original_recording": "Рик-2026-11-10-07-07-Датчик-телеметрии-потерян.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/servoko.mp3",
+    "bytes": 32250,
+    "sha256": "3ea25279a40078de2fa420f77f21699068be67042a542b9fff7feba34d9102e6",
+    "original_recording": "Рик-2026-11-10-07-07-Перегрузка-сервопривода!.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/swalert.mp3",
+    "bytes": 60672,
+    "sha256": "941e55e6054364e0257014bfc93687d9a9f4a3f94a1d877e98476b8516de74a2",
+    "original_recording": "Рик-2026-11-10-06-51-Проверь-переключатели,-Морти.-[sarcastic]-Кто-ту.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/swr_red.mp3",
+    "bytes": 44789,
+    "sha256": "57e1a5f33282d253654de06cf52d64f5af7bd5d8e855cdca013b3333db3d182d",
+    "original_recording": "Рик-2026-11-10-07-05-Ошибка-антенны-пульта.-Проверь-её.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/telemco.mp3",
+    "bytes": 59000,
+    "sha256": "74a8b8c3da8f2a8146967808ea7d693d41b537bdb2faf0873bbc17c6b7b79197",
+    "original_recording": "Рик-2026-11-10-06-53-Телеметрия-подключена.-[excited]-Цифры,-Морти!-М.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/telemko.mp3",
+    "bytes": 34340,
+    "sha256": "acc7475c18bb5243aa1db5501a2a68a035b92dea582287adea85a4196a58a9f0",
+    "original_recording": "Рик-2026-11-10-07-05-Телеметрия-потеряна,-Морти!.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/telemok.mp3",
+    "bytes": 59000,
+    "sha256": "0e20726a5087d93a9e48f4756eef4a29d0cd8a180928921dbe0b6c471d6b87cb",
+    "original_recording": "Рик-2026-11-10-07-05-Телеметрия-вернулась.-[relieved,-brisk]-О,-снова.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/thralert.mp3",
+    "bytes": 45625,
+    "sha256": "41030afce0ab5ca825a6ee04166e6948b0265cf946362e19fc12162d144f566e",
+    "original_recording": "Рик-2026-11-10-06-50-[firm,-brisk]-Газ-не-убран.-Стик-вниз,-Морти.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/timovr1.mp3",
+    "bytes": 62761,
+    "sha256": "30a0cf7c2205d95eb3c1f0aea7f31747680476f3e21988b4322b0200c4d0d195",
+    "original_recording": "Рик-2026-11-10-06-58-Первый-таймер-истёк.-[break]-[sarcastic]-«На-два.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/timovr2.mp3",
+    "bytes": 60672,
+    "sha256": "6870ab725ec3b1e2862b5db30ea6b089ecf832ba30717833f619536526df64a2",
+    "original_recording": "Рик-2026-11-10-07-13-Второй-таймер-истёк.-[annoyed,-quick]-Кто-опять.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/timovr3.mp3",
+    "bytes": 60672,
+    "sha256": "c1e623358f78328d585ec0d85b7f5ef8e5bd5da2c738506e047c5079f02353dc",
+    "original_recording": "Рик-2026-11-10-07-13-Третий-таймер-истёк.-[dry,-firm]-Четвёртого-не-б.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/trainco.mp3",
+    "bytes": 65687,
+    "sha256": "70dcd2a7aec19389e5f18f6b7377d090df116bfe6bb2d5e3f608d229d650258c",
+    "original_recording": "Рик-2026-11-10-06-59-Тренер-подключён.-[dry,-brisk]-Два-пульта,-а-Мор.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/trainko.mp3",
+    "bytes": 36012,
+    "sha256": "c9e4b59a406030b88669261c55a0b3809c0a78e8eb6c24c2f5ffb71fa2185a1a",
+    "original_recording": "Рик-2026-11-10-07-16-Связь-с-тренером-потеряна,-Морти!.mp3"
+  },
+  {
+    "path": "mapped/SYSTEM/trainok.mp3",
+    "bytes": 59000,
+    "sha256": "f4fa544f1ffe085cf062b0a257505e4f1f4a474771578aeb2109fc4770dc5397",
+    "original_recording": "Рик-2026-11-10-07-16-Связь-с-тренером-восстановлена.-Снова-слышим-вто.mp3"
+  },
+  {
+    "path": "mapped/airmof.mp3",
+    "bytes": 61090,
+    "sha256": "19d4a61e5060a9cf3349ce5bd7aa09579a478bdf36bb0fd9be2a7296985ae5aa",
+    "original_recording": "Рик-2026-11-10-07-04-Эйр-мод-выключен.-[dry]-Галочку-победили,-Морти.mp3"
+  },
+  {
+    "path": "mapped/airmon.mp3",
+    "bytes": 53148,
+    "sha256": "b7cbc0647a72aa504ea7827bcc87162b7826c02eff296c3f547caeadcacd0a11",
+    "original_recording": "Рик-2026-11-10-06-52-Эйр-мод-включён.-[sarcastic]-Физику-предупредили.mp3"
+  },
+  {
+    "path": "mapped/alt.mp3",
+    "bytes": 38938,
+    "sha256": "c0064cee66de7bf67ecc79adb22b02aba66c7408f9f6315864682e88837935de",
+    "original_recording": "Рик-2026-11-10-07-08-Высота,-Морти.-Слушай-цифры.mp3"
+  },
+  {
+    "path": "mapped/althld.mp3",
+    "bytes": 57746,
+    "sha256": "f7c7acf655cec771a166431e247da20a1eff0d2549b1b7c0375a41da6c59db4c",
+    "original_recording": "Рик-2026-11-10-07-09-Удержание-высоты.-[sarcastic]-Вот-бы-Джерри-так.mp3"
+  },
+  {
+    "path": "mapped/armed.mp3",
+    "bytes": 50223,
+    "sha256": "ab50acf55d8c2481f8b9496a7d05543b84d6a704f443f735946a1060f1cebfda",
+    "original_recording": "Рик-2026-11-10-06-52-Арминг.-[break]-[dry,-questioning]-Пальцы-убрал,.mp3"
+  },
+  {
+    "path": "mapped/auro.mp3",
+    "bytes": 41028,
+    "sha256": "624829ec02d1805995658e656804a853a75fe03c2666f59e66fef9f08071c559",
+    "original_recording": "Рик-2026-11-10-07-16-Авторотация.-Соберись,-Морти.mp3"
+  },
+  {
+    "path": "mapped/batcrt.mp3",
+    "bytes": 50223,
+    "sha256": "423cb7b59bdf8e86d3671f495a950cefb98605321cffc9fc4a95e4f4868f85a7",
+    "original_recording": "Рик-2026-11-10-06-54-[firm,-clear,-angry]-Критический-заряд-дрона!-Са.mp3"
+  },
+  {
+    "path": "mapped/disarm.mp3",
+    "bytes": 56074,
+    "sha256": "4188e3b0e0bf624e22a2f0ac7a5a820b6db761176f7a02cc0a7d8115f11e5db2",
+    "original_recording": "Рик-2026-11-10-06-52-Дизарм.-[break]-[excited,-quick-shout]-Всё,-я-ог.mp3"
+  },
+  {
+    "path": "mapped/flapdn.mp3",
+    "bytes": 61090,
+    "sha256": "e5430dea1fd74e667e2493b0a62f6b70e0f613fe0b96d681450466ad3a18fcc4",
+    "original_recording": "Рик-2026-11-10-07-15-Закрылки-выпущены.-Крылья-тоже-любят-драму.mp3"
+  },
+  {
+    "path": "mapped/flapup.mp3",
+    "bytes": 57746,
+    "sha256": "95bc0822af81d0bb6387722e7e75720c1d626fcc9174185fda24fd7fbb56d56f",
+    "original_recording": "Рик-2026-11-10-07-15-Закрылки-убраны.-Складная-наука,-Морти.mp3"
+  },
+  {
+    "path": "mapped/flttm.mp3",
+    "bytes": 51477,
+    "sha256": "25ef796c2aa5b36ba96ee952d6265f4ea4603e61b9f854b5ecbd6223c6ade982",
+    "original_recording": "Рик-2026-11-10-07-13-Время-полёта,-Морти.-[deadpan]-Земное,-если-что.mp3"
+  },
+  {
+    "path": "mapped/fm-1.mp3",
+    "bytes": 41028,
+    "sha256": "1e08e1a35e13d172aca80dce3ff0c77170690895726a761c205ccd8e4d811dcf",
+    "original_recording": "Рик-2026-11-10-07-11-Первый-режим.-Начнём-с-кнопки-без-дыма.mp3"
+  },
+  {
+    "path": "mapped/fm-2.mp3",
+    "bytes": 44371,
+    "sha256": "0c6fbd79b17c341510fbb08e07b14611459bf975af030dd38d19432b1cdafe17",
+    "original_recording": "Рик-2026-11-10-07-11-Второй-режим.-Это-наш-план-Б,-Морти.mp3"
+  },
+  {
+    "path": "mapped/fm-3.mp3",
+    "bytes": 53984,
+    "sha256": "bc2b01464be866f71f4093da036533c51c0a6a127001f6590a9ff3a9a59f9c02",
+    "original_recording": "Рик-2026-11-10-06-56-Третий-режим.-[proud]-Огурчик-Рик-одобряет.mp3"
+  },
+  {
+    "path": "mapped/fm-4.mp3",
+    "bytes": 84913,
+    "sha256": "0f56045ec449c1bc999bbdc7c309110772a56a5baa02e6f4c2c772fe37ffd9dd",
+    "original_recording": "Рик-2026-11-10-06-57-Четвёртый-режим.-Плюмбус-настроен.-[break]-[dead.mp3"
+  },
+  {
+    "path": "mapped/fm-5.mp3",
+    "bytes": 56074,
+    "sha256": "ed0283358d7240af876f910843309f39b669cea80cdba4b33886bb8c35f3b81b",
+    "original_recording": "Рик-2026-11-10-06-57-Пятый-режим.-[impatient,-quick]-Сычуаньский-соус.mp3"
+  },
+  {
+    "path": "mapped/fm-6.mp3",
+    "bytes": 61926,
+    "sha256": "3256dd5a2488254a8a28cc171cec078e3624ee735eae45da269b7d902f3830e0",
+    "original_recording": "Рик-2026-11-10-07-12-Шестой-режим.-[break]-[deadpan]-Да,-я-тоже-забыл.mp3"
+  },
+  {
+    "path": "mapped/fm-7.mp3",
+    "bytes": 48551,
+    "sha256": "d61ed7fe04965d1a1782fc226ea56c3fcebbf60f79e085ad4aea1fc92e522847",
+    "original_recording": "Рик-2026-11-10-07-12-Седьмой-режим.-Птичья-Личность-бы-оценила.mp3"
+  },
+  {
+    "path": "mapped/fm-8.mp3",
+    "bytes": 57746,
+    "sha256": "afbfa7d7d2668d345b5d23cc03198426f963ba1b7272bdfd002991464dda374c",
+    "original_recording": "Рик-2026-11-10-06-58-Восьмой-режим.-[break]-[conspiratorial,-clear]-Ц.mp3"
+  },
+  {
+    "path": "mapped/fm-9.mp3",
+    "bytes": 63597,
+    "sha256": "bdf25b24e847e796fba7432e12f8bf0cd76263388f73979b3e4ac1775401fded",
+    "original_recording": "Рик-2026-11-10-07-12-Девятый-режим.-[resigned,-brisk]-Всё,-Морти,-кно.mp3"
+  },
+  {
+    "path": "mapped/fm-acr.mp3",
+    "bytes": 59836,
+    "sha256": "632a7d93fcd30b0d1bf213d7a3d5b9174421f15241133457bc7dcbca69fbfbf1",
+    "original_recording": "Рик-2026-11-10-06-55-Акро.-[break]-[deadpan]-Запасной-дрон-в-соседней.mp3"
+  },
+  {
+    "path": "mapped/fm-ang.mp3",
+    "bytes": 56910,
+    "sha256": "0772ea37050eb2aaf4d664c313928c632e615a1c512a8eba6f7292bb3df544fc",
+    "original_recording": "Рик-2026-11-10-07-09-Энгл.-[dry]-Пульт-подстрахует-твоё-самомнение.mp3"
+  },
+  {
+    "path": "mapped/fm-crs.mp3",
+    "bytes": 47715,
+    "sha256": "a6705186db720f5048c8fa1713c858c4e0b225d41bfed0054092c1d3738a0fd7",
+    "original_recording": "Рик-2026-11-10-07-10-Крейсерский-режим.-[impatient,-quick]-Где-мои-на.mp3"
+  },
+  {
+    "path": "mapped/fm-hld.mp3",
+    "bytes": 51477,
+    "sha256": "d8d3f060fc7bae95ba08cd104957381e9d2f28455cf40ebf52a573f347111aa5",
+    "original_recording": "Рик-2026-11-10-07-11-Удержание-позиции.-Мисикса-пока-не-зови.mp3"
+  },
+  {
+    "path": "mapped/fm-hor.mp3",
+    "bytes": 55238,
+    "sha256": "5ae0227868c3d51df84b539da9e8e9a9ec152903fac0051326f8577bb9ca43e8",
+    "original_recording": "Рик-2026-11-10-07-09-Горизонт.-[brisk]-Кувыркайся,-Морти,-только-дрон.mp3"
+  },
+  {
+    "path": "mapped/fm-lch.mp3",
+    "bytes": 56074,
+    "sha256": "3c3613ae99c082026d2704703942ebd6aecc5543a5f9511e5d7d3163f2985c73",
+    "original_recording": "Рик-2026-11-10-06-56-Режим-взлёта.-[excited,-brisk]-Портал-открыт.-По.mp3"
+  },
+  {
+    "path": "mapped/fm-lnd.mp3",
+    "bytes": 61926,
+    "sha256": "d6ee149a7c147e47ae3f358dd4fcefc8e1be8bf86979837f102060ab0d2fc555",
+    "original_recording": "Рик-2026-11-10-07-11-Режим-посадки.-[dry]-Познакомься-с-землёй-аккура.mp3"
+  },
+  {
+    "path": "mapped/fm-man.mp3",
+    "bytes": 63597,
+    "sha256": "36260e3ad9b4e2336c72653af219e074e55427c6561ecfb337f5b0415d0fd26a",
+    "original_recording": "Рик-2026-11-10-06-56-Ручной-режим.-[dry,-quick]-Руки-твои,-комментари.mp3"
+  },
+  {
+    "path": "mapped/fm-nrm.mp3",
+    "bytes": 59836,
+    "sha256": "6881299946659144a0e826b4fb1784bf4ce75192520f9903064db24c29636787",
+    "original_recording": "Рик-2026-11-10-07-10-Обычный-режим.-[break]-[dry]-Удивительно,-пока-н.mp3"
+  },
+  {
+    "path": "mapped/fm-rth.mp3",
+    "bytes": 57746,
+    "sha256": "f01029264bbcfeb960af05ca7fba580cc4d9fa0f3d2da1dfbea78e9e01d4c12f",
+    "original_recording": "Рик-2026-11-10-06-56-Возврат-домой.-[relaxed]-Назад-в-гараж,-Морти.mp3"
+  },
+  {
+    "path": "mapped/fm-stb.mp3",
+    "bytes": 48551,
+    "sha256": "9889deceebae8267fb6592cb686c896e35be36feb1cfaa2b2d03060a0baf2eb0",
+    "original_recording": "Рик-2026-11-10-06-55-Стабилизация.-[sarcastic]-Даже-у-Джерри-есть-шан.mp3"
+  },
+  {
+    "path": "mapped/fsoff.mp3",
+    "bytes": 33922,
+    "sha256": "2c974ae575ff4807ca47654fcb57ee9e3cc11c281180d78db2c49bda4629b861",
+    "original_recording": "Рик-2026-11-10-07-06-Фейлсейф-снят,-Морти.mp3"
+  },
+  {
+    "path": "mapped/fson.mp3",
+    "bytes": 54402,
+    "sha256": "f040a4b4845f30fa2875a38e81996fe2feb0ff556e6a787a5e281072ddbf19b4",
+    "original_recording": "Рик-2026-11-10-07-06-[firm,-clear]-Фейлсейф!-Аварийный-режим-активен.mp3"
+  },
+  {
+    "path": "mapped/geardn.mp3",
+    "bytes": 75300,
+    "sha256": "8eb2fc1b6bbec4e98dbcaa7e78f07bbd4e0a934b36abbd6427620bdeebea41ba",
+    "original_recording": "Рик-2026-11-10-06-59-Шасси-выпущены.-[break]-[excited,-raspy-shout]-С.mp3"
+  },
+  {
+    "path": "mapped/gearup.mp3",
+    "bytes": 61090,
+    "sha256": "0f586006119c93cdbf056ad6c21302c03202bdedafca610a617eb7f3a3c4c1c6",
+    "original_recording": "Рик-2026-11-10-06-59-Шасси-убраны.-[deadpan]-Нога-Рика-пошла-отдыхать.mp3"
+  },
+  {
+    "path": "mapped/gps.mp3",
+    "bytes": 47715,
+    "sha256": "13db54432d114104bae874574547f6f7b9b5c1b928b6dbb09e897465b979a869",
+    "original_recording": "Рик-2026-11-10-07-08-Навигация-включена.-Сверим-измерение,-Морти.mp3"
+  },
+  {
+    "path": "mapped/hirate.mp3",
+    "bytes": 50223,
+    "sha256": "1c527361648d4e527251566299177f1061f653c4f8827d4b1ff27473e357d043",
+    "original_recording": "Рик-2026-11-10-07-14-Высокие-расходы.-Нежнее-со-стиками,-Морти.mp3"
+  },
+  {
+    "path": "mapped/ledoff.mp3",
+    "bytes": 69449,
+    "sha256": "f110646cae73353677fff3eb8ce0b83ad28e49be979c0e3643c95c2f1c19ab54",
+    "original_recording": "Рик-2026-11-10-07-15-Огни-выключены.-[break]-[confused]-Кто-взял-фона.mp3"
+  },
+  {
+    "path": "mapped/ledon.mp3",
+    "bytes": 57746,
+    "sha256": "79a52c9042dbcf75280c935fce0329bae52417c4ef82d5cfc55b65b3a1fcff9f",
+    "original_recording": "Рик-2026-11-10-06-59-Огни-включены.-[curious,-quick]-Зелёный-свет,-по.mp3"
+  },
+  {
+    "path": "mapped/lorate.mp3",
+    "bytes": 50223,
+    "sha256": "cf710f2d929d50f9d76fde274dc484e80ed14d3539e93e4565116845ee3290f8",
+    "original_recording": "Рик-2026-11-10-07-14-Низкие-расходы.-[dry]-Режим-«не-дёргайся»,-Морти.mp3"
+  },
+  {
+    "path": "mapped/lowbat.mp3",
+    "bytes": 50223,
+    "sha256": "1291e00b8386cb33903901fefd383f6e7ff8d300085c93cca55702ed7593dd25",
+    "original_recording": "Рик-2026-11-10-07-07-Низкий-заряд-дрона.-Пора-на-посадку.mp3"
+  },
+  {
+    "path": "mapped/lvlmod.mp3",
+    "bytes": 47297,
+    "sha256": "3252f959d6fabb9dd6c15a2cc6c7b7eac162d275ea2baf1b91f466cdbe6c294f",
+    "original_recording": "Рик-2026-11-10-07-10-Выравнивание.-[deadpan]-Небо-снова-наверху.mp3"
+  },
+  {
+    "path": "mapped/satfix.mp3",
+    "bytes": 59836,
+    "sha256": "128cb51634373e35e24bf07e55ec622e09ee3c0f5b948e1a5f519161b51815de",
+    "original_recording": "Рик-2026-11-10-06-54-Спутники-найдены.-[dry,-slightly-faster]-Даже-Ци.mp3"
+  },
+  {
+    "path": "mapped/satlst.mp3",
+    "bytes": 55238,
+    "sha256": "048d1072b07e2ec0cf3c4e23289a646429e2a7e46b7143d7fdfb6b73ffd90940",
+    "original_recording": "Рик-2026-11-10-07-08-Спутники-потеряны,-Морти.-Навигация-без-фиксации.mp3"
+  },
+  {
+    "path": "mapped/sigcrt.mp3",
+    "bytes": 44371,
+    "sha256": "2dcfc3dc2365a5be1ecaefcfe250d756f4fdb97ede18672640cff9d307f4e2ca",
+    "original_recording": "Рик-2026-11-10-07-06-Критически-слабая-связь-с-моделью!.mp3"
+  },
+  {
+    "path": "mapped/siglow.mp3",
+    "bytes": 42699,
+    "sha256": "9787a9a34af65f17f556689afb7c06ed8b647730072e121672b3e3350bde42c3",
+    "original_recording": "Рик-2026-11-10-07-06-Связь-слабеет.-Держи-сигнал-под-контролем.mp3"
+  },
+  {
+    "path": "mapped/splrdn.mp3",
+    "bytes": 59836,
+    "sha256": "8d6583ea40d476a638b0ff3d02a25642785e1995bce54e41d323b04a5a3b812e",
+    "original_recording": "Рик-2026-11-10-07-16-Интерцепторы-выпущены.-Сбавляем-пафос,-Морти.mp3"
+  },
+  {
+    "path": "mapped/splrup.mp3",
+    "bytes": 59000,
+    "sha256": "7999cc117ce079d7397c33d07f806dcd251200572f2828a9cc2ef3bcd22eee8a",
+    "original_recording": "Рик-2026-11-10-07-15-Интерцепторы-убраны.-Воздух-может-выдохнуть.mp3"
+  },
+  {
+    "path": "mapped/tohigh.mp3",
+    "bytes": 52312,
+    "sha256": "ea84b362f7dddbda55ccf93eac5064c99c160477fafd9d9467abb0134d504337",
+    "original_recording": "Рик-2026-11-10-06-54-Слишком-высоко,-Морти.-[sarcastic]-Орбиту-я-не-з.mp3"
+  },
+  {
+    "path": "mapped/tolow.mp3",
+    "bytes": 27235,
+    "sha256": "f82ad3af840ba6bb45ef897a2a4bca0a7cb75c3694fcf91d69e11f3360c16efb",
+    "original_recording": "Рик-2026-11-10-07-08-Опасно-низко,-Морти!.mp3"
+  },
+  {
+    "path": "mapped/trnoff.mp3",
+    "bytes": 49387,
+    "sha256": "323eb689783eb6b1add87c9259cfe98f387907ca77ea02496e40a45ad7e46363",
+    "original_recording": "Рик-2026-11-10-07-17-Режим-тренера-выключен.-[confident]-Твой-ход,-Мо.mp3"
+  },
+  {
+    "path": "mapped/trnon.mp3",
+    "bytes": 58164,
+    "sha256": "b45aeb55d90f5a93c3400154709fb8f8fb24016340bbaee30b59d1f3cbef7a3d",
+    "original_recording": "Рик-2026-11-10-07-17-Режим-тренера-включён.-[impatient,-quick]-Джерри.mp3"
+  },
+  {
+    "path": "site/app.js",
+    "bytes": 4852,
+    "sha256": "e46714128c00f874854d2888791d501c9584666d30883251bd6aed7891860c58"
+  },
+  {
+    "path": "site/catalog.js",
+    "bytes": 12507,
+    "sha256": "914cede469f9bd5c259b72f1bd9aeefea059e6e83ec49b4e96ca528d3bf1b1da"
+  },
+  {
+    "path": "site/favicon.svg",
+    "bytes": 277,
+    "sha256": "79db9ffe00f0647cf969fd223ea8f25442f64bffd71fa43d75d5243b0b2f6030"
+  },
+  {
+    "path": "site/index.html",
+    "bytes": 12133,
+    "sha256": "63d830dd3975b38eb50773429716382ce28890c9fd5c6128dd764b2ecf662214"
+  },
+  {
+    "path": "site/portal-texture.png",
+    "bytes": 203962,
+    "sha256": "0cc28fcc01b93864bc17df22663eed7bd2157f77f868a7bca57ea72c4883cf9d"
+  },
+  {
+    "path": "site/radiomaster-t8l-white.jpg",
+    "bytes": 43908,
+    "sha256": "74f115ac3c2dc1b2ab340671755302ec4ddc00fba2aac330eed49282e7b4753a"
+  },
+  {
+    "path": "site/styles.css",
+    "bytes": 11533,
+    "sha256": "99b247052aaa96ce3c7b980fa7245d3171f822c950814556358784de8df4921b"
+  }
+]
