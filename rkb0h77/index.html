@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#101710">
+  <meta name="description" content="Рик-дроновод — фанатская русская озвучка для EdgeTX. 77 русских реплик.">
+  <title>Рик-дроновод · Озвучка для EdgeTX</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="catalog.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#catalog">Перейти к каталогу</a>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="./" aria-label="Рик-дроновод, начало">
+        <span class="brand-icon" aria-hidden="true">✳</span>
+        <span>РИК<b>‑ДРОНОВОД</b></span>
+      </a>
+      <nav aria-label="Навигация">
+        <a href="#catalog">Реплики</a>
+        <a href="#install">Установка</a>
+        <a href="#mode-voice">Настройка</a>
+      </nav>
+      <span class="top-label">ПАКЕТ ДЛЯ EDGETX</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><i></i> ФАНАТСКАЯ ОЗВУЧКА ДЛЯ EDGETX</p>
+        <h1 id="hero-title" aria-label="Рик-дроновод">Рик-<span>дроновод</span></h1>
+        <p class="hero-text">Поехали, Морти. Голос из гаража подскажет, что происходит с дроном, и подколет тебя после посадки.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#catalog">Открыть реплики <span aria-hidden="true">↓</span></a>
+          <a class="button button-quiet" href="#install">Как установить <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <figure class="hero-art">
+        <div class="art-caption"><span>ГАРАЖ / СВЯЗЬ С ПОРТАЛОМ</span><span>КАНАЛ 01</span></div>
+        <img class="portal-texture" src="portal-texture.png" alt="" width="391" height="408" fetchpriority="high">
+        <svg class="radio-photo" viewBox="123 227 750 547" role="img" aria-label="Белый RadioMaster T8L перед зелёным порталом">
+          <defs><clipPath id="t8l-silhouette">
+            <path d="M130,608 136,540 148,442 168,323 181,300 191,293 201,279 207,274 237,262 267,254 286,251 320,249 323,233 348,233 352,237 354,248 631,248 639,247 640,234 646,233 670,233 673,249 700,252 726,254 753,261 790,276 802,292 811,298 820,312 828,330 851,473 862,560 865,604 865,663 861,689 854,711 846,726 833,743 818,754 800,762 781,766 759,765 745,761 726,751 701,725 666,621 656,604 647,595 639,591 626,587 608,585 381,585 366,587 349,594 335,607 321,638 296,722 292,730 274,748 258,758 234,765 216,765 200,762 181,754 169,746 156,733 143,711 137,694 130,645Z"/>
+          </clipPath></defs>
+          <image href="radiomaster-t8l-white.jpg" width="1000" height="1000" clip-path="url(#t8l-silhouette)"/>
+        </svg>
+        <figcaption><span>RADIOMASTER T8L · WHITE</span><span><i></i> ПОРТАЛ ОТКРЫТ</span></figcaption>
+      </figure>
+    </section>
+
+    <dl class="facts wrap" aria-label="Состав пакета">
+      <div><dt>Записей в комплекте</dt><dd>77</dd></div>
+      <div><dt>Системных предупреждений и уведомлений</dt><dd>25</dd></div>
+      <div><dt>Реплик для назначения</dt><dd>52</dd></div>
+      <div><dt>КГц · WAV PCM</dt><dd>32</dd></div>
+    </dl>
+
+    <section id="catalog" class="section wrap" aria-labelledby="catalog-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><i></i> 01 / КАТАЛОГ</p>
+          <h2 id="catalog-title">Что говорит пульт</h2>
+        </div>
+        <p>Сначала пульт называет событие, потом добавляет реплику. Срочные предупреждения звучат сразу и коротко.</p>
+      </div>
+
+      <div class="catalog">
+        <div class="catalog-controls">
+          <span class="archive-status">77 ЗАПИСЕЙ · WAV</span>
+          <a class="button button-primary" href="rick-drone-full.zip" download>Скачать озвучку · ZIP ↓</a>
+        </div>
+
+        <div class="catalog-tools">
+          <label class="search">
+            <span aria-hidden="true">⌕</span>
+            <input id="search" type="search" placeholder="Поиск по реплике, событию или WAV" autocomplete="off" aria-label="Поиск по реплике, событию или имени файла">
+          </label>
+          <div class="filters" role="group" aria-label="Тип реплик">
+            <button type="button" data-filter="all" aria-pressed="true">Все</button>
+            <button type="button" data-filter="system" aria-pressed="false">Системные</button>
+            <button type="button" data-filter="custom" aria-pressed="false">Назначаемые</button>
+          </div>
+        </div>
+        <div class="catalog-label">
+          <p id="results" aria-live="polite">77 реплик</p>
+          <p id="audio-status" role="status"></p>
+        </div>
+
+        <ol id="track-list" class="track-list" aria-label="Список реплик"></ol>
+        <p id="empty" class="empty" hidden>Реплики по этому запросу не найдены.</p>
+        <div id="more-area" class="more-area" hidden>
+          <button id="more" type="button" class="button button-quiet">Показать ещё <span aria-hidden="true">↓</span></button>
+        </div>
+        <audio id="player" preload="none"></audio>
+        <noscript><p class="empty">Для просмотра каталога включи JavaScript.</p></noscript>
+      </div>
+    </section>
+
+    <section id="install" class="section install wrap" aria-labelledby="install-title">
+      <div>
+        <p class="eyebrow"><i></i> 02 / УСТАНОВКА</p>
+        <h2 id="install-title">Из портала в пульт</h2>
+        <p class="install-intro">WAV · PCM 16 бит · 32 кГц · моно</p>
+        <p class="compatibility">Пакет предназначен для пультов с EdgeTX. У T8L на иллюстрации своя прошивка.</p>
+        <a class="doc-link" href="https://manual.edgetx.org/edgetx-how-to/advanced-audio-features">Руководство EdgeTX <span aria-hidden="true">↗</span></a>
+      </div>
+      <ol class="steps">
+        <li><div><h3>Скачай архив</h3><p>Сохрани копию папки <code>SOUNDS</code> на SD-карте. Установи полный русский звуковой пакет для своей версии EdgeTX, затем распакуй этот ZIP и объедини папки <code>SOUNDS</code> с заменой совпадающих файлов. Остальные звуки русского пакета понадобятся для чисел и единиц измерения.</p></div></li>
+        <li><div><h3>Выбери русский язык голоса</h3><p>В настройках пульта установи русский в пункте <code>Voice language</code>. Системные записи лежат в <code>SOUNDS/ru/SYSTEM</code>.</p></div></li>
+        <li><div><h3>Назначь фразы на переключатель</h3><p>В настройках модели открой <code>Special Functions</code>, выбери условие срабатывания и действие <code>Play Track</code>. Укажи нужную реплику и включи функцию.</p></div></li>
+      </ol>
+    </section>
+
+    <section id="mode-voice" class="section install wrap" aria-labelledby="mode-title">
+      <div>
+        <p class="eyebrow"><i></i> 03 / НАСТРОЙКА</p>
+        <h2 id="mode-title">Голос на тумблере</h2>
+        <p class="install-intro">Назначения сохраняются отдельно для каждой модели. Для примера используем трёхпозиционный тумблер SB.</p>
+        <a class="doc-link" href="https://manual.edgetx.org/bw-radios/model-select/special-functions">Специальные функции EdgeTX ↗</a>
+      </div>
+      <div class="mode-guide">
+        <ol class="steps">
+          <li><div><h3>Проверь положения тумблера</h3><p>В Betaflight открой Receiver и Modes, чтобы сопоставить тумблер, AUX-канал и режимы. В обычной настройке Acro включён, когда ANGLE и HORIZON выключены. Подставь свои положения в пример ниже.</p></div></li>
+          <li><div><h3>Создай отдельную строку для каждого положения</h3><p>На Pocket или Boxer открой MDL → нужная модель → PAGE&gt; → Special Functions. В каждой свободной строке выбери положение тумблера, действие <code>Play Track</code> и дорожку. Если есть флажок включения, отметь его.</p>
+            <table><caption>Пример назначений для SB</caption><thead><tr><th scope="col">Тумблер</th><th scope="col">Режим</th><th scope="col">Дорожка</th></tr></thead><tbody>
+              <tr><td>SB↑</td><td>Acro</td><td><code>fm-acr</code></td></tr>
+              <tr><td>SB–</td><td>ANGLE</td><td><code>fm-ang</code></td></tr>
+              <tr><td>SB↓</td><td>HORIZON</td><td><code>fm-hor</code></td></tr>
+            </tbody></table>
+          </div></li>
+          <li><div><h3>Выбери повтор и проверь звук</h3><p><code>-</code> или <code>1x</code> проигрывает фразу один раз при активации. <code>!-</code> или <code>!1x</code> пропускает её при включении пульта. WAV для назначения должны лежать прямо в <code>SOUNDS/ru/</code>. Сними пропеллеры и проверь все положения на земле. Фраза сообщает о положении тумблера, а фактический режим показывает полётный контроллер.</p></div></li>
+        </ol>
+        <p>Для режимов самого EdgeTX можно выбрать <code>FM0</code> или <code>FM1</code> в поле переключателя Special Functions. Для FM1 и последующих режимов сначала задай переключатель на странице Flight Modes.</p>
+        <p>Для команды арминга есть <code>armed</code> и <code>disarm</code>, для возврата — <code>fm-rth</code>. Фактический арминг и запуск возврата проверяй по данным полётного контроллера.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span class="brand"><span class="brand-icon" aria-hidden="true">✳</span><span>РИК<b>‑ДРОНОВОД</b></span></span>
+      <div class="footer-note">
+        <p>Фанатский проект по мотивам «Рика и Морти».</p>
+        <p>Изображения <a href="https://radiomasterrc.com/products/t8l-radio-controller">RadioMaster</a> и <a href="https://rick-and-morty-api-woad.vercel.app/portal.html">фан-сайта о портале</a>.</p>
+      </div>
+      <a href="#">Наверх ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
