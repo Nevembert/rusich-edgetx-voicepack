@@ -12,6 +12,8 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
+      - name: Install audio converter
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg
       - name: Reassemble and verify the full-edition payload
         run: |
           set -euo pipefail
@@ -21,6 +23,7 @@ jobs:
           done > "$RUNNER_TEMP/rick-drone-full.tar.gz"
           printf '%s  %s\n' 'a655ab26362aeacc3e801d94997887e3e91c3b96107efed84826286e778b2e60' "$RUNNER_TEMP/rick-drone-full.tar.gz" | sha256sum --check
           tar -xzf "$RUNNER_TEMP/rick-drone-full.tar.gz" -C "$RUNNER_TEMP/rick-drone-full"
+          cp rkb0h77/styles.css "$RUNNER_TEMP/rick-drone-full/site/styles.css"
           python "$RUNNER_TEMP/rick-drone-full/build_audio.py" "$RUNNER_TEMP/rick-drone-full/mapped" "$RUNNER_TEMP/rick-drone-full/site"
       - name: Commit the published page and its 77 EdgeTX WAV files
         run: |

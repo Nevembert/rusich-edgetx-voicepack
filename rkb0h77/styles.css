@@ -165,7 +165,7 @@ h2 { font-size: clamp(2.25rem, 5.1vw, 4.25rem); letter-spacing: -.072em; line-he
 
 @media (max-width: 620px) {
   .wrap { width: calc(100% - 30px); }
-  .top-inner { min-height: 58px; gap: 10px; }
+  .top-inner { min-height: 58px; gap: 10px; flex-wrap: wrap; padding-block: 12px; }
   .top .brand { gap: 6px; font-size: .75rem; letter-spacing: .02em; }
   .top nav { gap: 10px; }
   .top nav a { font-size: .8rem; }
