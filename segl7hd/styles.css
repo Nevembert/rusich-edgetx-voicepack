@@ -256,3 +256,14 @@ body:has(.player:not([hidden])) { padding-bottom: 115px; }
   .hero-actions { gap: 9px; }
   .hero-actions .button { flex: 1 1 145px; padding-inline: 12px; gap: 10px; }
 }
+
+.mode-guide { min-width: 0; color: var(--muted); font-size: 15px; line-height: 1.6; }
+.mode-guide ol { margin: 0; padding-inline-start: 1.5em; }
+.mode-guide li + li { margin-top: 1.15em; }
+.mode-guide li::marker, .mode-guide code, .mode-guide a { color: var(--cyan); }
+.mode-guide h3 { margin: 0; color: inherit; font-size: 1em; }
+.mode-guide p { margin: .4em 0 0; }
+.mode-guide > p { margin-top: 1em; }
+.mode-guide a { text-decoration: underline; text-underline-offset: .16em; }
+.mode-guide table { width: 100%; margin-top: .7em; border-collapse: collapse; }
+.mode-guide th, .mode-guide td { padding: .35em .2em; border-bottom: 1px solid var(--line); text-align: left; }

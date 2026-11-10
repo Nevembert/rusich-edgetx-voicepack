@@ -69,11 +69,57 @@
     </section>
 
     <section id="install" class="install" aria-labelledby="installTitle">
-      <div class="install-title"><p class="eyebrow">02 / ВОПЛОЩЕНИЕ</p><h2 id="installTitle">Пробуди<br>свой Pocket.</h2><p>25 системных уведомлений. 52 назначаемые реплики. Русский пакет для EdgeTX.</p><a class="text-link" href="INSTALL.md" download>Инструкция по установке ↗</a></div>
+      <div class="install-title">
+        <p class="eyebrow">02 / ВОПЛОЩЕНИЕ</p>
+        <h2 id="installTitle">Пробуди<br>свой Pocket.</h2>
+        <p>25 системных уведомлений. 52 назначаемые реплики. Русский пакет для EdgeTX.</p>
+        <a class="text-link" href="INSTALL.md" download>Инструкция по установке ↗</a>
+        <p><a class="text-link" href="#mode-voice">Настроить озвучку режимов ↓</a></p>
+      </div>
       <div class="steps">
         <article><span>01</span><div><h3>Выбрать версию</h3><p>Полная — с комментариями. Короткая — только основные фразы. В каждом архиве 77 записей с одинаковыми именами: устанавливай одну версию. Сначала сохрани копию SOUNDS со своей SD-карты.</p></div></article>
         <article><span>02</span><div><h3>Скопировать на пульт</h3><p>Объедини папку SOUNDS из архива с папкой на SD-карте. Замени совпадающие файлы, сохрани остальные звуки русского пакета.</p></div></article>
         <article><span>03</span><div><h3>Назначить и проверить</h3><p>Выбери русский язык. Назначь дорожки в специальных функциях модели и проверь уведомления на земле.</p></div></article>
+      </div>
+    </section>
+
+    <section class="install" id="mode-voice" aria-labelledby="modeVoiceTitle">
+      <div class="install-title">
+        <p class="eyebrow">03 / НАСТРОЙКА</p>
+        <h2 id="modeVoiceTitle">Озвучка режимов полёта</h2>
+        <p>Назначьте фразу на каждое положение тумблера. Настройка сохраняется отдельно для каждой модели.</p>
+        <p>Имена дорожек совпадают в полной и короткой версиях Арк Вардена.</p>
+      </div>
+      <div class="mode-guide">
+        <ol>
+          <li>
+            <h3>Узнайте, какой тумблер переключает режимы</h3>
+            <p>Если летаете на Betaflight, откройте <b>Modes</b> и проверьте, какой AUX-канал и какое положение включают ANGLE и HORIZON. В обычной настройке Acro действует, когда оба режима выключены. Если не знаете, какой тумблер управляет AUX, откройте вкладку Receiver и посмотрите, какой канал меняется при переключении. Ниже <code>SB</code> приведён как пример.</p>
+          </li>
+          <li>
+            <h3>Добавьте строки в специальных функциях</h3>
+            <p>На Pocket или Boxer нажмите <b>MDL</b>, выберите нужную модель и листайте <b>PAGE&gt;</b> до <b>Специальных функций</b> (<b>Special Functions</b>). Откройте свободную строку <code>SF</code>, выберите положение тумблера, действие <b>Play Track</b> и имя дорожки. Для каждого положения нужна своя строка. Если есть флажок включения, отметьте его.</p>
+            <table aria-label="Пример назначения для тумблера SB">
+              <thead><tr><th scope="col">Тумблер</th><th scope="col">Режим</th><th scope="col">Дорожка</th></tr></thead>
+              <tbody>
+                <tr><td><code>SB↑</code></td><td>Acro</td><td><code>fm-acr</code></td></tr>
+                <tr><td><code>SB–</code></td><td>ANGLE</td><td><code>fm-ang</code></td></tr>
+                <tr><td><code>SB↓</code></td><td>HORIZON</td><td><code>fm-hor</code></td></tr>
+              </tbody>
+            </table>
+          </li>
+          <li>
+            <h3>Настройте однократное воспроизведение</h3>
+            <p>В поле повтора выберите <code>-</code> (<code>1x</code>), чтобы фраза звучала один раз при активации. <code>!-</code> (<code>!1x</code>) пропускает озвучку положения при включении пульта. Если дорожка не видна, проверьте русский язык озвучки и наличие WAV прямо в <code>SOUNDS/ru/</code> на SD-карте. Файлы в <code>SYSTEM</code> EdgeTX вызывает сам.</p>
+          </li>
+          <li>
+            <h3>Проверьте на земле</h3>
+            <p>Снимите пропеллеры, переведите тумблер во все три положения и сопоставьте фразы с режимами в Betaflight Configurator или OSD. Фраза срабатывает от положения тумблера. Фактический режим проверяйте по данным полётного контроллера.</p>
+          </li>
+        </ol>
+        <p><b>Режимы самого EdgeTX.</b> Если вы настроили их на странице <a href="https://manual.edgetx.org/bw-radios/model-select/flight-modes">Flight Modes</a>, используйте в Special Functions те же положения или логические условия. Для режима по умолчанию <code>FM0</code> выберите положение или условие, при котором остальные режимы выключены.</p>
+        <p><b>Другие фразы.</b> Тем же способом можно назначить <code>armed</code> и <code>disarm</code> на два положения тумблера ARM или <code>fm-rth</code> на тумблер возврата. Такая озвучка сообщает о команде. Арминг и запуск возврата проверяйте по данным полётного контроллера.</p>
+        <p><a href="https://manual.edgetx.org/bw-radios/model-select/special-functions">Руководство EdgeTX</a> · <a href="https://betaflight.com/docs/wiki/app/auxiliary-tab">Руководство Betaflight</a></p>
       </div>
     </section>
 
