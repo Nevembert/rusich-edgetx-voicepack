@@ -1,0 +1,31 @@
+name: One-time Arc Warden migration
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/arc-migration.yml'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and verify original files
+        run: python .github/arc-migrate.py
+      - name: Commit transferred page
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add q7v4m9x
+          git commit -m 'Add Arc Warden complete page'
+          git push origin HEAD:main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - uses: actions/deploy-pages@v4
+        id: deployment
